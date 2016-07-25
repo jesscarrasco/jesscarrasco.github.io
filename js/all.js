@@ -19,7 +19,7 @@ controllers.controller('ApplicationController', function ($scope, $rootScope, $h
 		var query = 'crying';
 	}
 
-	$http.get('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag='+query).then(function( data ){
+	$http.get('//api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag='+query).then(function( data ){
 		$scope.gif = data.data.data.image_original_url;
 	}, function(){console.log('err')});
 });
