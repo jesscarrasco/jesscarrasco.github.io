@@ -1,8 +1,6 @@
 'use strict';
 
 var app = angular.module('lanchinho', [
-//	'lanchinho.directives',
-//	'lanchinho.services',
 	'lanchinho.controllers',
 	'angularMoment'	
 ]);
