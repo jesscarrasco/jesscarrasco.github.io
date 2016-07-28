@@ -11,7 +11,7 @@ var controllers = angular.module('lanchinho.controllers', []);
 controllers.controller('ApplicationController', function ($scope, $rootScope, $http) {
 	$scope.hour = moment().hour();
 	$scope.minutes = moment().minutes();
-	$scope.isIt = ($scope.hour == 12) || (($scope.hour == 16 && $scope.minutes >= 30) || ($scope.hour == 17 && $scope.minutes <=30));
+	$scope.isIt = ($scope.hour == 12) || ($scope.hour == 16);
 
 	if( $scope.isIt ){
 		var query = 'food';
