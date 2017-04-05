@@ -23,3 +23,32 @@ controllers.controller('ApplicationController', function ($scope, $rootScope, $h
 		$scope.gif = data.data.data.image_original_url;
 	}, function(){console.log('err')});
 });
+
+
+controllers.controller('CipherController', function ($scope, $rootScope, $http) {
+
+	$scope.alpha = [
+		"A","B","C","D","E","F","G","H","I",
+		"J","K","L","M","N","O","P","Q","R",
+		"S","T","U","V","W","X","Y","Z"
+	]
+	$scope.dictionary = {' ':' '};
+	$scope.translate = '';
+
+
+	$scope.translate = function(){
+		if( $scope.translateMe.length > 0 ){
+			var arr = $scope.translateMe.split('');
+			var translated = '';
+
+			angular.forEach(arr, function(letter){
+				if( angular.isUndefined($scope.dictionary[letter.toUpperCase()])){
+					translated += '_';
+				} else {
+					translated += $scope.dictionary[letter.toUpperCase()];
+				}
+			})
+			$scope.translated = translated;
+		}
+	}
+});

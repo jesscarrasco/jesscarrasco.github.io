@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app="lanchinho" ng-controller="ApplicationController as appCtrl">
+<head>
+	<title>Tens tempo Inc.</title>	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body ng-controller="CipherController as cipherCtrl">
+
+	<ul id="decipher">
+		<li ng-repeat="char in alpha">
+			{{char}}
+			<input type="text" size="1" ng-model="dictionary[char]" max-lenght="1" />
+		</li>
+	</ul>
+
+	<textarea ng-model="translateMe" id="brunices"></textarea>
+	<button ng-click="translate()">testa</button>
+
+	<p class="voce-nem-queria-ler-isso">{{translated}}</p>
+
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+	<script src="libs/moment/min/moment.min.js"></script>
+	<script src="libs/angular-moment/angular-moment.min.js"></script>
+	<script src="js/all.js"></script>
+</body>
+</html>	

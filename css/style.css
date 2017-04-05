@@ -39,3 +39,33 @@ img{
 [ng\:cloak], [ng-cloak], .ng-cloak {
   display: none !important;
 }
+
+#decipher{
+	list-style: none;
+	padding: 0;
+	overflow: hidden;
+	margin: 20px auto;
+    width: 520px;
+}
+#decipher li{
+	text-align: center;
+	width: 20px;
+	display: block;
+	float: left;
+}
+#brunices{
+	display: block;
+	width: 80%;
+	margin: 20px auto;
+	height: 100px
+}
+#brunices + button{
+	float: right;
+	margin-right: 10%;
+}
+
+.voce-nem-queria-ler-isso{
+	width: 80%;
+	margin: 20px auto;
+	font-family: monospace;	
+}
