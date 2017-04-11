@@ -1,0 +1,42 @@
+html, body{
+	padding: 0;
+	margin:0;
+	position: relative;
+	font-family: Merriweather, serif;
+}
+html{
+  /*height: 100%;*/
+}
+body {
+/*  min-height: 100%;*/
+  background: #333;
+}
+p{
+	height: 10vh;
+	line-height: 10vh;
+	text-align: center;
+	font-size: 5vw;
+	margin:25% 0 0 0;
+	border-top:1px solid #5f3434;
+	border-bottom:1px solid #5f3434;
+	color: #FF9800;
+}
+.wpm{
+	width: 40px;
+	height: 20px;
+	background: #ccc;
+	padding: 3px;
+	border: 0
+}
+
+form{
+	color: #fff;
+	display: block;
+	padding: 10px
+}
+form button{
+	height: 20px;
+	background: #000;
+	color: #fff;
+	border:0; 
+}

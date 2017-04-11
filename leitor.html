@@ -4,22 +4,24 @@
 	<title>Tens tempo Inc.</title>	
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width" />
-	<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="css/reader.css" rel="stylesheet" type="text/css" />
+
 </head>
-<body ng-controller="CipherController as cipherCtrl">
+<body ng-controller="ReaderController as readerCtrl">
+	
+	<form>
+		Words per minute:
+		<input type="number" ng-model="wpm" class="wpm" />
+		<button ng-click="read()">start reading</button>
+		<button ng-click="stop()">stop reading</button>
+		<button ng-click="pause()">pause reading</button>
+	</form>
+	
+	<p>{{arrWords[wordIndex]}}</p>
 
-	<ul id="decipher">
-		<li ng-repeat="char in alpha">
-			{{char}}
-			<input type="text" size="1" ng-model="dictionary[char]" max-lenght="1" />
-		</li>
-	</ul>
-
-	<textarea ng-model="translateMe" id="brunices"></textarea>
-	<button ng-click="translate()">testa</button>
-
-	<p class="voce-nem-queria-ler-isso">{{translated}}</p>
-
+	{{wordIndex}}
 
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
 	<script src="libs/moment/min/moment.min.js"></script>
