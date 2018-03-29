@@ -752,14 +752,13 @@ combineFilters = function(){
 			}
 		}
 	}
-	
-	c.log('nActive:', nActive);
-	
+		
 	tagsNumbers = tagsNumbers.getNormalizedToMax();
 	
 	writeHashTag();
 	
 	enterFrame();
+
 }
 
 //sets

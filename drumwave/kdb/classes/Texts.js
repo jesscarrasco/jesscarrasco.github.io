@@ -6,7 +6,7 @@ Texts.TEXT = " ";
 
 function Texts(){
 	
-	this.title = "<fcBlack><fs18>Data Knowledge Database";// | <e0*+ info></f>";
+	this.title = "<fcBlack><fs48>Data Knowledge Database";// | <e0*+ info></f>";
 	
 	this.titletBox = new TextFieldHTML({
 		'text':this.title,

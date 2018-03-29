@@ -10,7 +10,6 @@
 
 onLoadCenters = function(e){
 	//Loader.loadData('./resources/php/delimoebio.php', onLoadPhp, this);
-	
 	var xCoordinates = StringOperators.getAllTextsBetweenStrings(e.result, "cx=\"", "\"").toNumberList();
 	var yCoordinates = StringOperators.getAllTextsBetweenStrings(e.result, "cy=\"", "\"").toNumberList();
 	loadedCenters = GeometryConvertions.twoNumberListsToPolygon(xCoordinates, yCoordinates).factor(10);
@@ -216,6 +215,7 @@ onLoadData = function(e){
 	nActive = i1 = nLinks = delicious_data.array.length;
 	
 	loadingData = false;
+
 	texts.dataLoaded();
 	
 	resizeWindow();
@@ -252,6 +252,7 @@ onLoadData = function(e){
 	setsFilter.setFilterType();
 	categoryTags.setFilterType();
 	
+
 	combineFilters();
 }
 
