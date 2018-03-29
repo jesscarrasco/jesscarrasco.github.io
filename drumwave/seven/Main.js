@@ -65,7 +65,7 @@ var rotationVector = new Point(0,0);
 var pA = new Point3D(0,0,100); //used to check side
 var limA = 0.99;//0.6;
 var limB = 1.01;//3;
-var sideA = true;
+var sideA = false;
 var currentAngles = new Point3D(0,0,0);
 
 var binNumber = 0;
@@ -250,9 +250,6 @@ cycle=function(){
 	
 	follow_mX = 0.8*follow_mX+0.2*mouseX;
 	follow_mY = 0.8*follow_mY+0.2*mouseY;
-	
-	
-	
 	
 	//////////binNumber and inSet
 	lastBinNumber = binNumber;

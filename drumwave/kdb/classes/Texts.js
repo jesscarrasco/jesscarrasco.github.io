@@ -1,15 +1,12 @@
 Texts.prototype.constructor=Texts;
 
 
-Texts.TEXT = "<fcBlack><fs18>Personal Knowledge Database visualizes and allows the exploration of all my internet references that I've been collecting and producing for more than 10 years. Among them are more than 700 projects (including mine), more than 700 Wikipedia articles, hundreds of images and videos, texts and blog posts."
-	+"<br><br>Only the Wikipedia articles conform the fabric of subjects I've been researching and the theoretical background for my work."
-	+"<br><br>Each reference is placed in the interesection of some of seven sets, each one associated to one of these categories: HUMANISM, TECHNOLOGY, LANGUAGE, SCIENCE, INTERFACE, ART and NETWORKS. Visit a color driven version of this Venn diagram <ehttp://moebio.com/research/sevensets/*here>."
-	+"<br><br><ehttp://delicious.com/moebio*This> is where I store and organize my references.</f></f>";
+Texts.TEXT = " ";
 
 
 function Texts(){
 	
-	this.title = "<fcBlack><fs36>personal Knowledge database </f><fs16><ehttp://moebio.com*Santiago Ortiz>";// | <e0*+ info></f>";
+	this.title = "<fcBlack>Data Knowledge Database";// | <e0*+ info></f>";
 	
 	this.titletBox = new TextFieldHTML({
 		'text':this.title,

@@ -57,7 +57,7 @@ onLoadPaths = function(e){
 			for(var k=0;loadedCenters[k]!=null;k++){
 				if(PolygonOperators.bezierPolygonContainsPoint(pieceBase10, loadedCenters[k])){
 					centerBase = loadedCenters[k].factor(0.1);
-					c.log(i, centerBase);
+					// c.log(i, centerBase);
 					break;
 				}
 			}
