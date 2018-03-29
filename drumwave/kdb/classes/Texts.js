@@ -54,7 +54,7 @@ Texts.prototype.clickLink = function(e){
 			break;
 		case "1":
 			this.open = false;
-			this.titletBox.setText(this.title + " | <e0*+ info></f>");
+			this.titletBox.setText(this.title);
 			this.textBox.setText("");
 			this.textBox.y = 5000;
 			this.loadingStart.setText("");
