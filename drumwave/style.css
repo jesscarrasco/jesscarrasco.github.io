@@ -1,0 +1,117 @@
+*{
+  font-family: 'Titillium Web';
+}
+
+#pp-nav span, .pp-slidesNav span{
+  background:rgba(255, 255, 255, 0.5) !important
+}
+iframe,
+video{
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+#home{
+  text-align: center;
+  background: #a34076;
+  color:#fff
+}
+#home img{
+  max-height: 50vh;
+}
+.bgBlack{
+  background: #000
+}
+#fp-nav{
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 3px;
+}
+.fp-tooltip{
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.7);
+  color: #000 !important;
+  padding: 5px;
+  left: 25px !important;
+}
+
+.logo{
+    text-align: center;
+    color: #fff;
+    letter-spacing: 5px;
+}
+.logo img{
+  max-width: 25vh;
+  display: block;
+  margin: 0 auto;
+}
+.section{
+  overflow: hidden;
+}
+.surf{
+  background-image: url(assets/bg.jpg);
+  background-size: cover;
+  background-position: bottom left;
+}
+
+.surf h2, .surf p{
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 50vw;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.surf h2{
+    text-transform: uppercase;
+    font-size: 70px;
+    margin: 40px auto;
+    font-weight: 600;
+    line-height: 0.9em;
+}
+.text{
+  font-size: 20px;
+  line-height: 1em; 
+  font-weight: 300;
+}
+.buttons{
+  margin:35px 0
+}
+.button{
+  display: inline-block;
+  padding:5px 30px;
+  color:#002690;
+  background: #fff;
+  text-decoration: none;
+  margin:0 10px;
+}
+
+.green{
+  background:#014200;
+  color:#fff;
+}
+
+.red{
+  background:#900000;
+  color:#fff;
+}
+
+.purple{
+  background:#3e0561;
+  color:#fff;
+}
+
+.orange{
+  background:#ff8100;
+  color:#fff;
+}
+
+.bg-color{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.35;
+  background:#000;
+  z-index: -1;
+}

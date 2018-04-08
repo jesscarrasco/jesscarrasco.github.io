@@ -5,91 +5,123 @@
 <head>
   <meta charset="utf-8" />
   <title>Drummwave</title>
-
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
 
-  <style type="text/css" media="screen">
-
-    @font-face {
-        font-family: Titillium;
-        font-weight: bold;
-        src: url("./kdb/resources/font/TitilliumText22L001.otf") format("opentype");
-    }
-    *{
-      font-family: Titillium;
-    }
-    iframe,
-    video{
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-    #home{
-      text-align: center;
-      background: #a34076;
-      color:#fff
-    }
-    #home img{
-      max-height: 50vh;
-    }
-    .bgBlack{
-      background: #000
-    }
-    #fp-nav{
-      background: rgba(255, 255, 255, 0.7);
-      border-radius: 3px;
-    }
-    .fp-tooltip{
-      border-radius: 3px;
-      background: rgba(255, 255, 255, 0.7);
-      color: #000 !important;
-      padding: 5px;
-      left: 25px !important;
-    }
-  </style>
-  <link href="./assets/jquery.fullpage.min.css" rel="stylesheet" />
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="./assets/jquery.fullpage.min.js"></script>
+  <script src="./assets/jquery.pagepiling.min.js"></script>
+
+  <link href="./assets/jquery.pagepiling.min.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-  <div id="fullpage">
+  <div id="pagepiling">
     <div class="section bgBlack">
       <iframe src="./seven/index.htm" frameBorder="0" id="seven"></iframe>
     </div>
-    <div class="section active" id="home">
-      <img src="./assets/logo.png" />
-      <h1>Your data, your life, your story</h1>
-      <p>By respecting privacy, ownership and value we made it really easy to people and companies to use their data.</p>
+    <div class="section surf" id="the-data-company">
+      <div class="bg-color"></div>
+      <div class="logo">
+        <img src="assets/logo-drumwave.png" />
+        D R U M W A V E
+      </div>
+      <h2>The data <br />company</h2>
+      <p class="text">for business people, data scientists, students, all kinds of surfers - and you</p>
+      <p class="buttons">
+        <a href="#" class="button orange">Keep in touch</a>
+        <a href="#" class="button white">Ask for a Demo</a>
+      </p>
+      <p class="join">[ join us to reboot the data ecosystem ]</p>
     </div>  
-    <div class="section">
-      <video playsinline autoplay muted loop>
-        <source src="./assets/DWreel2.mp4" type="video/mp4">
-      </video>
-    </div>  
-    <div class="section">
-      <video playsinline autoplay muted loop>
-        <source src="./assets/DWreel2.mp4" type="video/mp4">
-      </video>
-    </div>   
-    <div class="section">
-      <video playsinline autoplay muted loop>
-        <source src="./assets/DWreel2.mp4" type="video/mp4">
-      </video>    
-    </div>  
-    <div class="section ">
-      <iframe src="./kdb/index.htm" frameBorder="0"></iframe>
-    </div>  
-    <div class="section">
-      <h1>Contact</h1>
+    <div class="section surf" id="bigdata-era">
+      <div class="bg-color"></div>
+      <div class="logo">
+        <img src="assets/logo-drumwave.png" /> D R U M W A V E
+      </div>
+      <h2>The era of big data is about to end</h2>
+      <p class="text">the monetization of data will transform technology, its rules of engagement, and the way we understand business</p>
+      <p class="buttons">
+        <a href="#" class="button green">Keep in touch</a>
+        <a href="#" class="button white">Ask for a Demo</a>
+      </p>
+      <p class="join">[ join us to reboot the data ecosystem ]</p>
     </div>
+    <div class="section surf" id="your-business">
+      <div class="bg-color"></div>
+      <div class="logo">
+        <img src="assets/logo-drumwave.png" /> D R U M W A V E
+      </div>
+      <h2>
+        YOUR BUSINESS<br />
+        YOUR STRATEGY<br />
+        THE DATA
+      </h2>
+      <p class="text">we are reconnecting companies and consumers through the value of their data</p>
+      <p class="buttons">
+        <a href="#" class="button red">Keep in touch</a>
+        <a href="#" class="button white">Ask for a Demo</a>
+      </p>
+      <p class="join">[ join us to reboot the data ecosystem ]</p>
+    </div>  
+    <div class="section surf" id="your-story">
+      <div class="bg-color"></div>
+      <div class="logo">
+        <img src="assets/logo-drumwave.png" /> D R U M W A V E
+      </div>
+      <h2>
+        YOUR STORY
+        <br /> YOUR LIFE
+        <br /> THE DATA
+      </h2>
+      <p class="text">we are reconnecting companies and consumers through the value of their data</p>
+      <p class="buttons">
+        <a href="#" class="button red">Keep in touch</a>
+        <a href="#" class="button white">Ask for a Demo</a>
+      </p>
+      <p class="join">[ join us to reboot the data ecosystem ]</p>
+    </div>  
+    <div class="section surf" id="your-life">
+      <div class="bg-color"></div>
+      <div class="logo">
+        <img src="assets/logo-drumwave.png" /> D R U M W A V E
+      </div>
+      <h2>
+        YOUR LIFE
+        <br /> THE DATA
+      </h2>
+      <p class="text">we have made it safe and simple for everyone to use data by acknowledging ownership and respecting privacy</p>
+      <p class="buttons">
+        <a href="#" class="button purple">Keep in touch</a>
+        <a href="#" class="button white">Ask for a Demo</a>
+      </p>
+      <p class="join">[ join us to reboot the data ecosystem ]</p>
+    </div>  
+    <div class="section surf" id="your-life">
+      <div class="bg-color"></div>
+      <div class="logo">
+        <img src="assets/logo-drumwave.png" /> D R U M W A V E
+      </div>
+      <h2>
+        2019
+        <strong>REBOOT</strong>
+        <br />THE DATA ECOSYSTEM
+      </h2>
+      <p class="text">our products are empowering people and transforming organizations join us at this journey towards 2019 let’s reboot it!</p>
+      <p class="buttons">
+        <a href="#" class="button purple">Keep in touch</a>
+        <a href="#" class="button white">Ask for a Demo</a>
+      </p>
+      <p class="join">[ join us to reboot the data ecosystem ]</p>
+    </div>  
   </div>
   <script>
-    $(document).ready(function() { $('#fullpage').fullpage({
-      navigation: true,
-      navigationPosition: 'left',
-      navigationTooltips: ['Seven Sets','Our Story', 'Lichen', 'LaaS', 'Nest', 'Data Knowledge', 'Contact'],
-      autoScrolling: false
-    }); });
+    $(document).ready(function() { $('#pagepiling').pagepiling({
+      navigation: {
+        tooltips: ['Seven Sets','Our Story', 'Lichen', 'LaaS', 'Nest', 'Data Knowledge', 'Contact'],
+      },
+
+      }); 
+    });
   </script>
 </body>
 </html>
