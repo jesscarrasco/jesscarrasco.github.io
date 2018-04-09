@@ -1,5 +1,10 @@
 *{
-  font-family: 'Titillium Web';
+  font-family: 'Titillium Web', Helvetica, sans-serif;
+}
+body{
+  background-image: url(assets/bg.jpg);
+  background-size: cover;
+  background-position: bottom left;
 }
 
 #pp-nav span, .pp-slidesNav span{
@@ -47,11 +52,7 @@ video{
 .section{
   overflow: hidden;
 }
-body{
-  background-image: url(assets/bg.jpg);
-  background-size: cover;
-  background-position: bottom left;
-}
+
 
 .surf h2, .surf p{
   text-align: center;
@@ -79,7 +80,7 @@ body{
 .button{
   display: inline-block;
   padding:5px 30px;
-  color:#002690;
+  color:#002452;
   background: #fff;
   text-decoration: none;
   margin:0 10px;
@@ -91,21 +92,20 @@ body{
 }
 
 .red{
-  background:#900000;
+  background:#861001;
   color:#fff;
 }
 
 .purple{
-  background:#3e0561;
+  background:#3B1F4E;
   color:#fff;
 }
 
 .orange{
-  background:#ff8100;
+  background:#BD5B0C;
   color:#fff;
 }
 
-#bigdata-era
 .bg-color{
   position: absolute;
   top:0;
@@ -116,21 +116,83 @@ body{
   background:#000;
   z-index: -1;
 }
-/*
-#reboot, 
-#the-data-company{
-  background-image:url(assets/bg-blue.jpg)
+
+#reboot .bg-color, 
+#the-data-company .bg-color{
+  background-color: #002452;
 }
 
-#bigdata-era{
-  background-image:url(assets/bg.jpg)
+
+#your-business .bg-color{
+  background-color: #3B1F4E;
 }
 
-#your-business{
-  background-image:url(assets/bg-purple.jpg)
+#bigdata-era .bg-color{
+  background-color: #054109;
+}
+#pagepiling{
+  z-index: 2;
+}
+#video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: white; /* in case the video doesn't fit the whole page*/
+
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover; /*cover video background */
+  z-index:1;
+  display: none;
 }
 
-#bigdata-era{
-  background-image:url(assets/bg-blue.jpg)
+.layer{
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  /* -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0); */
+  background: rgba(255, 255, 255, 0.77);
+  padding-left:5vw;
+  color:#53585F
 }
-*/
+
+.layer h2 span{
+  display: block;
+  font-size: 40px;
+  line-height: 0.9em;
+}
+.layer h2{
+  font-size: 80px;
+  margin: 20px auto;
+  font-weight: 600;
+  line-height: 0.9em;  
+}
+.layer p{
+  font-size: 18px;
+  line-height: 1em;  
+  font-weight: 300;
+  margin:0;
+}
+.layer ul{
+  margin: 20px 0;
+  padding:0;
+  list-style-position: inside;
+  list-style-type: square;
+}
+.layer li{
+  margin:0;
+  padding:0;
+  line-height: 1.1em;  
+  font-size: 18px;
+  font-weight: 600;
+}
+
