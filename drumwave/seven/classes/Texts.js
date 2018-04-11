@@ -5,7 +5,7 @@ function Texts(){
 	
 	this.arrow;
 	
-	var title = "<fcWhite><fs24>- 7 sets Venn Diagram - <br />128 color combinations from mixing 7 colors</f></f>";
+	var title = "<fcWhite><fs14>- 7 sets Venn Diagram - <br>128 color combinations<br> from mixing 7 colors</f></f>";
 	
 	var text = " ";
 	
