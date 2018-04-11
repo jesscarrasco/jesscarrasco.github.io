@@ -15,10 +15,10 @@
   <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-  <video id="video" playsinline autoplay muted loop>
+  <!-- video id="video" playsinline autoplay muted loop>
     <source src="assets/dw.webm" type="video/webm">
     <source src="assets/dw.mp4" type="video/mp4">
-  </video>
+  </video -->
 
   <div id="pagepiling">
     <div class="section bgBlack">
@@ -61,7 +61,7 @@
         YOUR STRATEGY<br />
         THE DATA
       </h2>
-      <p class="text">we are reconnecting companies and consumers through the value of their data</p>
+      <p class="text">we are reconnecting companies and consumers <br /> through the value of their data</p>
       <p class="buttons">
         <a href="#" class="button red">Keep in touch</a>
         <a href="#" class="button white">Ask for a Demo</a>
@@ -78,13 +78,47 @@
         <br /> YOUR LIFE
         <br /> THE DATA
       </h2>
-      <p class="text">we are reconnecting companies and consumers through the value of their data</p>
+      <p class="text">we are reconnecting companies and consumers <br />through the value of their data</p>
       <p class="buttons">
         <a href="#" class="button red">Keep in touch</a>
         <a href="#" class="button white">Ask for a Demo</a>
       </p>
       <p class="join">[ join us to reboot the data ecosystem ]</p>
     </div>  
+    <div class="section surf" id="education">
+      <div class="bg-color"></div>
+      <div class="logo">
+        <img src="assets/logo-drumwave.png" /> D R U M W A V E
+      </div>
+      <h2>
+        YOUR SCHOOL
+        <br /> YOUR EDUCATION
+        <br /> THE DATA
+      </h2>
+      <p class="text">we have made learning about data and data science fun and simple <br />by creating learing experiences for all ages</p>
+      <p class="buttons">
+        <a href="#" class="button blue">Keep in touch</a>
+        <a href="#" class="button white">Ask for a Demo</a>
+      </p>
+      <p class="join">[ join us to reboot the data ecosystem ]</p>
+    </div>  
+    <div class="section video">
+      <div class="layer">
+        <h2>
+          <span>DDV™</span>
+          NEST
+        </h2>
+        <p>
+          The ultimate data immersion experience. Users can navigate rich narratives for data discovery, analysis and activation.
+        </p>
+    
+        <ul>
+          <li>Multi-screen sync</li>
+          <li>Sharing control</li>
+          <li>Exchange integrity</li>
+        </ul>
+      </div>
+    </div>
     <div class="section video ">
       <div class="layer">
         <h2>
@@ -122,24 +156,7 @@
         </ul>
       </div>
     </div>
-    <div class="section video">
-      <div class="layer">
-        <h2>
-          <span>DDV™</span>
-          NEST 
-        </h2>
-        <p>
-          The ultimate data immersion experience. Users can navigate rich narratives for data discovery, analysis and
-          activation.
-        </p>
-        
-        <ul>
-          <li>Multi-screen sync</li>
-          <li>Sharing control</li>
-          <li>Exchange integrity</li>
-        </ul>
-      </div>
-    </div>  
+
     <div class="section bgBlack">
       <iframe src="./kdb/index.htm" frameBorder="0" id="kdb"></iframe>
     </div>
@@ -149,11 +166,11 @@
         <img src="assets/logo-drumwave.png" /> D R U M W A V E
       </div>
       <h2>
-        2019
+        2019<br />
         <strong>REBOOT</strong>
         <br />THE DATA ECOSYSTEM
       </h2>
-      <p class="text">our products are empowering people and transforming organizations join us at this journey towards 2019 let’s reboot it!</p>
+      <p class="text">our products are empowering people and transforming organizations <br />join us at this journey towards 2019 <br />let’s reboot it!</p>
       <p class="buttons">
         <a href="#" class="button purple">Keep in touch</a>
         <a href="#" class="button white">Ask for a Demo</a>
@@ -165,7 +182,7 @@
     $(document).ready(function(){ 
       $('#pagepiling').fullpage({
         navigationTooltips:
-        ['Seven Sets','Our Story', 'Our Story', 'Our Story', 'Our Story', '', 'Lichen', 'Nest', 'Data Knowledge', 'Contact'],
+        ['Seven Sets','Our Story', 'Our Story', 'Our Story', 'Our Story', 'Education', 'Nest', 'DDV', 'Lichen', 'Data Knowledge', 'Contact'],
         navigation: true,
         navigationPosition: 'left',
 
