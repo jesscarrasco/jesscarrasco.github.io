@@ -215,7 +215,11 @@ h2 span{
 }
 
 h2.reboot{
-  font-size: 85px;
+  font-size: 105px;
+}
+
+h2 span.rly{
+  font-size: 40px;
 }
 
 #fp-nav ul li:nth-child(2),
