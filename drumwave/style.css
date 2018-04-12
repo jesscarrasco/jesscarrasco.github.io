@@ -132,8 +132,7 @@ video{
 #your-business .bg-color{
   background-color: #3B1F4E;
 }
-
-#bigdata-era .bg-color{
+#your-story .bg-color{
   background-color: #054109;
 }
 
@@ -208,7 +207,16 @@ video{
 }
 
 
+h2 span{
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1em;
+}
 
+h2.reboot{
+  font-size: 85px;
+}
 
 #fp-nav ul li:nth-child(2),
 #fp-nav ul li:nth-child(3), 
